@@ -1,29 +1,52 @@
 <script language="JavaScript">
+    var r_text = new Array();
 
-<!--
+    // Updated quotes
+    r_text[0] = "You do not believe what you see; you see what you believe. - Unknown";
+    r_text[1] = "Your time is limited, don't waste it living someone else's life. - Steve Jobs";
+    r_text[2] = "The key to immortality is first living a life worth remembering. - Bruce Lee";
+    r_text[3] = "Either suffer the pain of self-discipline or suffer the pain of regret. - Unknown";
+    r_text[4] = "In the middle of every difficulty lies opportunity. - Albert Einstein";
+    r_text[5] = "Confidence is quiet. Insecurity is loud. - Unknown";
+    r_text[6] = "Success is walking from failure to failure with no loss of enthusiasm. - Winston Churchill";
+    r_text[7] = "The sculptor is already complete within the marble block before I start my work. It is already there; I just have to chisel away the superfluous material. - Michelangelo";
+    r_text[8] = "Life is change, growth is optional. Choose wisely. - Karen Kaiser Clark";
+    r_text[9] = "A flower does not think of competing with the flower next to it. It just blooms. - Zen Shin";
+    r_text[10] = "The darkest hour has only sixty minutes. - Morris Mandel";
+    r_text[11] = "Dream big and dare to fail. - Norman Vaughan";
+    r_text[12] = "Everything must be hard before it can be easy. - Unknown";
+    r_text[13] = "The only way to do great work is to love what you do. - Steve Jobs";
+    r_text[14] = "Your life is your message to the world. Make it inspiring. - Lorrin L. Lee";
+    r_text[15] = "Great things are not done by impulse, but by a series of small things brought together. And great things are not something accidental, but must certainly be willed. - Vincent van Gogh";
+    r_text[16] = "The best way to predict the future is to create it. - Peter Drucker";
+    r_text[17] = "Life is about making an impact, not making an income. - Kevin Kruse";
+    r_text[18] = "Quitting cannot enter your head; don't even envision it. If you do, you might as well ring the bell. - Unknown";
+    r_text[19] = "Don't watch the clock; do what it does. Keep going. - Sam Levenson";
+    r_text[20] = "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt";
+    r_text[21] = "Most people fail for the simple reason they don't learn the right skills necessary to succeed. - Unknown";
+    r_text[22] = "If you're scared, sad, lonely, upset, or lost, remember the happiness you found in the struggle to create Swipe a Mess. It feels like a game, but the results are real. All you need to do is work on something, even if you don't enjoy it. If you're scared of something, do it afraid. If you're sad, change your perspective and remember it's only temporary. Don't run from the pain; remember that you just need to endure it. If you're lonely, spend time with family or friends; a girl should never fix that for you. If you're upset, remember who you are. If you're lost, find your direction. Just remember that you don't give up. It's not in your vocabulary. Even when you think you are, it won't happen. So you might as well endure it with valor. You have a duty to those you love to become the best. So act like the best, especially when you don't feel like it. - Unknown";
+    r_text[23] = "The best revenge is massive success. - Frank Sinatra";
+    r_text[24] = "Never in a hurry, never worried, never desperate, never stopping short. - Unknown";
+    r_text[25] = "Don't count the days, make the days count. - Muhammad Ali";
+    r_text[26] = "Life is really simple, but we insist on making it complicated. - Confucius";
+    r_text[27] = "If you hear a voice within you say you cannot paint, then by all means paint, and that voice will be silenced. - Vincent van Gogh";
+    r_text[28] = "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt";
+    r_text[29] = "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer";
+    r_text[30] = "Resilience is what makes a man. - Unknown";
+    r_text[31] = "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it. - Jordan Belfort";
+    r_text[32] = "You don't have to be rich to sparkle. - Unknown";
+    r_text[33] = "The harder you work for something, the greater you'll feel when you achieve it. - Unknown";
+    r_text[34] = "The only thing that stands between you and your dream is the will to try and the belief that it is actually possible. - Joel Brown";
+    r_text[35] = "Life is a journey that must be traveled no matter how bad the roads and accommodations. - Oliver Goldsmith";
+    r_text[36] = "Every accomplishment starts with the decision to try. - John F. Kennedy";
+    r_text[37] = "The best revenge is massive success. - Frank Sinatra";
+    r_text[38] = "If you hear a voice within you say you cannot paint, then by all means paint and that voice will be silenced. - Vincent van Gogh";
+    r_text[39] = "Great things are not done by impulse, but by a series of small things brought together. And great things are not something accidental, but must certainly be willed. - Vincent van Gogh";
+    r_text[40] = "The sculptor is already complete within the marble block before I start my work. It is already there; I just have to chisel away the superfluous material. - Michelangelo";
+    r_text[41] = "Everything must be hard before it can be easy. - Unknown";
+    r_text[42] = "Quitting cannot enter your head; don't even envision it. If you do, you might as well ring the bell. - Unknown";
+    r_text[43] = "Never in a hurry, never worried, never desperate, never stopping short. - Unknown";
 
-var r_text = new Array ();
-
-r_text[0] = "Phrase one";
-
-r_text[1] = "Phrase one";
-
-r_text[2] = "Phrase one";
-
-r_text[3] = "Phrase one";
-
-r_text[4] = "Phrase one";
-
-r_text[5] = "Phrase one";
-
-r_text[6] = "Phrase one";
-
-r_text[7] = "Phrase one";
-
-var i = Math.floor(8*Math.random())
-
-document.write('<span style="font-weight: bold; font-size: 300%;">' + r_text[i] + '</span>');
-
-//-->
-
-</script>
+    var today = new Date();
+    var start = new Date(today.getFullYear(), 0, 1); // January 1st of current year
+    var days = Math.floor((today - start) / (24 * 60 * 60 *
